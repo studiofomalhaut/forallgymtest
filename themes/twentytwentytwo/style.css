@@ -1,0 +1,215 @@
+/*
+Theme Name: Twenty Twenty-Two
+Theme URI: https://wordpress.org/themes/twentytwentytwo/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Full Site Editing features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours.
+Requires at least: 5.9
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentytwo
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments
+
+Twenty Twenty-Two WordPress Theme, (C) 2021 WordPress.org
+Twenty Twenty-Two is distributed under the terms of the GNU GPL.
+*/
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+/* 	background: rgb(124,151,254); */
+	background-image: linear-gradient(to right bottom, #7c97fe, #70a6ff, #6cb4ff, #70c1ff, #7cccff, #8cd4fe, #9ddbfd, #aee2fc, #c0e8fd, #d1eefe, #e1f4fe, #f1faff);}
+
+
+header.wp-block-template-part{
+	display: none!important;
+}
+
+main div:first-child.wp-container-6.wp-block-group{
+	display: none!important;
+}
+
+/*
+ * Navigation
+ * */
+ 
+ul.navigation-links{
+	list-style:none;
+	display: inline-flex;
+}
+
+ul.navigation-links.nav-link{
+	font-family: "Ogonek Unicase", sans-serif;
+	font-size: 20px;
+	padding: 5px 10px;
+}
+
+#footer p{
+	display:none!important;
+}
+
+/*
+ * *
+ * * SECTION 1 - JOIN
+ * */
+
+/* H2s
+ * */ 
+.secondary-title{
+	color:black;
+	font-family: 'Ongonek unicase', sans-serif;
+}
+.vertical {
+    color: black;
+    vertical-align: bottom;
+    transform: rotateZ(90deg);
+    margin-right: 25%!important;
+    margin-top: 24.2%!important;
+}
+
+/* P
+ * */
+.section1-p{
+	border-left: 
+}
+
+/*
+ * */ "YOURSELF title"
+/* div.section1-right > .elementor-element.elementor-element-0dcd6c6.vertical.secondary-title.medium-title.elementor-widget.elementor-widget-heading {
+    margin-top: -16%!important;
+    margin-left: 42%!important;
+} */
+
+
+.action-btn{
+	color: red!important;
+}
+
+/* main > div:second-child > .elementor .elementor-7 > */
+.wp-container-7 > :where(:not(.alignleft):not(.alignright)) {
+    max-width: 1000px!important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+.elementor-element.elementor-element-fa1af2f.image-section1.elementor-widget.elementor-widget-image.animated.slideInRight {
+    margin-top: -50%!important;
+}
+/* .elementor-element.elementor-element-fa1af2f.image-section1.elementor-widget.elementor-widget-image {
+    margin-top: -200px!important;
+} */
+.elementor-element.elementor-element-c59592b.vertical.large-title.elementor-widget.elementor-widget-heading.animated.slideInRight {
+    margin-right: 250px!important;
+    margin-top: 116px!important;
+}
+
+/*
+ * SECTION 2 // MUSIC PLAYER
+ * */
+.elementor-7 .elementor-element.elementor-element-d37c313 .flipcaption span {
+    padding: 10px 10px 10px 10px;
+    margin-top: -90px!important;
+}
+
+.elementor-7 .elementor-element.elementor-element-dcc2724 .wpr-slider-arrow:hover{
+	opacity:1;
+}
+
+/*
+ * SECTION 3 // VIDEO SECTION
+ * */
+
+.elementor-7 .elementor-element.elementor-element-dcc2724 .wpr-slider-content {
+    margin-top: -255px!important;
+    margin-left: -16px;
+    text-align: left;
+    max-width: 340px;
+}
+.elementor-7 .elementor-element.elementor-element-dcc2724 .wpr-slider-title * {
+    font-family: "Alata", Sans-serif;
+    font-size: 43px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 1.2em;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.elementor-7 .elementor-element.elementor-element-dcc2724 .wpr-slider-description p {
+    color: #e33434;
+    padding: 5px 10px 5px 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.fa.fa-star{
+	color: none;
+	border-color:#e33434;
+}
+
+.fa.fa-star.checked{
+	color:#e33434;
+}
+
+.elementor-7 .elementor-element.elementor-element-dcc2724 .wpr-slider-primary-btn {
+    background-color: #E33434;
+    color: #ffffff;
+    border-color: 0;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    padding: 8px 85px 8px 15px;
+    margin: 7px 10px 0px 10px;
+    border-style: none;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 6px;
+}
+
+.elementor-7 .elementor-element.elementor-element-dcc2724 .wpr-slider-arrow {
+    display: flex !important;
+    color: rgba(255,255,255,0.8);
+    border-color: rgba(255,255,255,0.8);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    border-radius: 40px;
+    background: #e33434;
+    opacity: 0.6;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+/*
+ * FOOTER / APP
+ * */
+
+footer{
+	display:none!important;
+}
+
+/*
+ * Font style Ogonek Unicase
+**/
+
+@font-face { 
+font-family: 'Ogonek Unicase', sans-serif; 
+src: url(/forallgymtest/app/public/wp-content/themes/twentytwentytwo/assets/fonts/ogonek-unicase/Ogonek-Unicase.ttf); 
+font-weight: bold; 
+}
+
+@font-face { 
+font-family: 'Substance W00', sans-serif; 
+src: url(forallgymtest/app/public/wp-content/themes/twentytwentytwo/assets/fonts/substance-w00-bold/SubstanceW00Bold.ttf); 
+font-weight: bold; 
+}
